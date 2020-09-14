@@ -1,0 +1,266 @@
+/* header */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  background-color: #282828;
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav span {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+.name {
+  background-image: url("https://unsplash.com/photos/zE6ivbPzPGU/download?force=true&w=1920");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 52rem;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.name {
+  color: white;
+  text-align: center;
+}
+
+.name h1 {
+  font-size: 5rem;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  margin-top: 0.4rem;
+}
+
+.name h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* Main  */
+/* About Me */
+
+
+
+.about-heading {
+  background-color: #E5E5E5;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.about-heading h1 {
+  font-size: 3rem;
+  padding-top: 3rem;
+  margin-top: 0;
+}
+
+/* Technical Skills */
+.skills-heading {
+  font-size: 2rem;
+  height: 4rem;
+  width: 21rem;
+  margin-bottom: 0rem;
+  display: inline-block;
+}
+
+.skills-heading-container,
+.projects-heading-container {
+  text-align: center;
+}
+
+.skills-heading h1,
+.projects-heading h1 {
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.skills-flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 3rem;
+}
+
+.column {
+  border: 1px solid black;
+  box-shadow:0 5px 9.5px 0.5px rgba(0,0,0,0.2);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.column h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.column li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Projects */
+.projects-flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects-heading-container {
+  margin-top: 10rem;
+}
+
+.projects-heading {
+  font-size: 2rem;
+  height: 4rem;
+  width: 25rem;
+  margin-bottom: 0rem;
+  display: inline-block;
+}
+
+.project-list{
+  margin-top: 2.6rem;
+}
+
+.project-title{
+  font-size:2rem;
+}
+
+.project-list td {
+  font-style: italic;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.project-view a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* End of Main */
+
+/* Contact */
+.contact-title {
+  margin-top: 10rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-information{
+  text-align: center;
+}
+
+.contact-information a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-right:2rem;
+}
+
+/* Footer */
+
+footer{
+  border-top: black 0.1rem solid;
+  padding-left: 0.5rem;
+  margin-top: 1.2rem;
+  background-color: #E5E5E5;
+}
+
+footer h4 {
+  margin-bottom: 0;
+}
+
+
+/* Media Queries */
+
+  /* Iphone 6/7/8 */
+@media (max-width: 375px) {
+
+  nav span{
+    padding: 0.5rem;
+  }
+
+  .name h1 {
+    font-size: 3.2rem;
+  }
+
+  .project-title{
+    font-size: 1rem;
+  }
+
+  .contact-title{
+    font-size: 1.5rem;
+  }
+
+}
+  /* Iphone 6/7/8 plus */
+@media (width: 414px) {
+
+  nav span{
+    padding: 0.5rem;
+  }
+
+  .name h1 {
+    font-size: 3.2rem;
+  }
+  .skills-flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column{
+    width: 15rem;
+    margin-left: 3.8rem;
+  }
+  .project-title{
+    font-size: 1.2rem;
+  }
+
+  .contact-title{
+    font-size: 1.5rem;
+  }
+
+}
+
+
+
+  /* iPad */
+@media (width: 768px) {
+  .name h1{
+    font-size: 3rem;
+  }
+
+  .skills-flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column{
+    width: 18rem;
+    margin-left: 15rem;
+  }
+
+}
